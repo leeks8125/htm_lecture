@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>kakaojoinmembership</title>
+	<style>
+		ul {list-style:none;
+			padding-left:0px;}
+	</style>
+</head>
+<body>
+	<h1>kakao</h1>
+	<form>
+		<h2>카카오계정 정보를 입력해주세요</h2>
+		<h3>카카오계정 이메일</h3>
+		<input type="text" name="email" placeholder="이메일 주소 입력"><br>
+		<input type="submit" name="ckemail" value="인증메일 발송"><br>
+		<h3>비밀번호</h3>
+		<input type="password" name="pw" placeholder="비밀번호(8~32자리)"><br>
+		<input type="password" name="ckpw" placeholder="비밀번호 재입력">
+		<h3>닉네임</h3>
+		<input type="text" name="nickname" placeholder="닉네임을 입력해주세요"><br>
+		<h3>생일/성별</h3>
+		<select name="bod">
+		<option>1900</option>
+		<option>1910</option>
+		<option>1950</option>
+		<option>2000</option>
+		<option>2010</option>
+		<option>2020</option>
+		</select>
+		<select name="month">
+		<option>1</option>
+		<option>4</option>
+		<option>7</option>
+		<option>10</option>
+		</select>
+		<select name="day">
+		<option>1</option>
+		<option>10</option>
+		<option>20</option>
+		<option>30</option>
+		</select>
+		<input type="checkbox" name="dmafur" id="dmafur">
+		<label for="dmafur">음력</label><br>
+		<input type="radio" name= "gender0" id="gender3">
+		<label for="gender3">선택안함</label>
+		<input type="radio" name= "gender0" id="gender2">
+		<label for="gender2">여성</label>
+		<input type="radio" name= "gender0" id="gender1">
+		<label for="gender1">남성</label><br>
+		<input type="submit" name="next" value="다음">
+	</form>
+		<ul>
+			<li><a href="#" >이용약관</a></li>
+			<li><a href="#" >개인정보 처리방침</a></li>
+			<li><a href="#" >운영정책</a></li>
+			<li><a href="#" >고객센터</a></li>
+			<li><a href="#" >공지사항</a></li>
+			<li><select name="lang">
+					<option>한국어</option>
+					<option>중국어</option>
+					<option>일본어</option>
+				</select></li>
+		</ul>
+
+</body>
+</html>
