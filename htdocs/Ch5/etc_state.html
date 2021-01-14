@@ -1,0 +1,22 @@
+<!doctype html>
+	<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Css3 Selector Basic</title>
+		<style>
+		/*인풋이 가능하면 화이트 불가능 하면 회색 포커스를 맞추면 오랜지*/
+		input :enabled{ background-color: white;}
+		input :disenabled{ background-color: gray;}
+		input :focus{ background-color: orange;}
+		input :checked{ background-color: blue;}
+		</style>
+	</head>
+	<body>
+		<h2>사용가능</h2>
+		<input >	
+		<h2>사용가능</h2>
+		<input disabled="disabled">
+		<h2>사용가능</h2>
+		
+	</body>
+	</html>
