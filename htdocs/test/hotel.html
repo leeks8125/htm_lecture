@@ -26,11 +26,13 @@
 		.second{
 			float:left;padding:10px 25px 0 0;
 			font-size:13px;
-			margin:1px;
+			margin:0 0 0 2px;
 		}
+	
 		.back{
+			
 			padding:0 0 0 100px;
-			height:450px;
+			height:350px;
 			border:3px black;
 			background-image:url('C:/Users/km/Desktop/background.png');
 			background-size:100%;
@@ -38,14 +40,14 @@
 		.put{
 			margin:50px 0 0 0 ;
 			border:2px solid black;
-			background-color:white;
+			background-color:#ffe5b2;
 			border-radius:10px;
-			width:800px;
-			height:250px;
-
+			width:950px;
+			height:170px;
 		}
-		.name{
-			float:left;
+		.name1{
+			color:black;
+
 		}
 		.fourth{
 			border:3px solid gray;
@@ -60,21 +62,27 @@
 			text-align:center
 		}
 		.nation{
-			border:3px solid white;
+			border:1px solid white;
 			background-color:gray;
 			border-radius:20px 20px 20px 20px;
-			width:80px;
-			margin:0 0 0 0;
-			padding:0 0 15px 0;
+			width:70px;
+			padding:0 0 5px 0;
 			color:blue;
-			text-align:center;
 			float:left;
+			text-align:center;
 			
 		}
 		
 		.nation1{
 			font-size:32px;
-			margin:0 0 0 10px;
+			margin:10px 0 0 10px;
+		}
+		.nation1>span{
+			font-size:20px;
+			border:1px solid black;
+			background-color:blue;
+			color:white;
+			margin:0 0 0 680px ;
 		}
 	
 		.resort{
@@ -84,7 +92,6 @@
 			width:300px;
 			height:400px;
 			color:black;
-			text-align:left;
 			float:left;
 			margin:10px 20px 0 10px;
 			padding:0 0 80px 0;
@@ -94,9 +101,7 @@
 			width:300px;
 			height:200px;
 		}
-		.over{
-			overflow:hidden;
-		}
+		
 		input[type="submit"]{
 			margin:170px 10px 10px 100px;
 			
@@ -117,8 +122,74 @@
 		}
 		.special{
 			float:right;
+			background-color:blue;
+			color:white;
 		}
-		
+		.dest{
+			font-size:13px;
+			margin:0 0 0 10px ;
+			float:left;
+		}
+		.dest1{
+			width:330px;
+		}
+		.ckin{
+			font-size:13px;
+			margin:0 0 0 50px;
+			float:left;
+		}
+		.ckin1{
+			width:100px;
+		}
+		.ckot{
+			font-size:13px;
+			margin:0 0 0 50px;
+			float:left;
+		}
+		.ckot1{
+			width:100px;
+		}
+		.day{
+			margin:20px 0 0 50px;
+		}
+		.room{
+			margin-left:10px;
+			float:left;
+			width:50px;
+		}
+		.room1{
+			float:left;
+			width:40px;
+			
+		}
+		.adult{
+			margin:0 0 0 100px;
+			float:left;
+		}
+		.adult1{
+			float:left;
+			width:40px;
+			margin-left:40px;
+		}
+		.child{
+			margin:0 0 0 50px;
+			float:left;
+		}
+		.child1{
+			float:left;
+			width:40px;
+			margin-left:40px;
+		}
+		.hu{
+			margin-left:50px;
+		}
+		.under{
+			color:white;
+			background-color:blue;
+			border:3px solid black;
+			margin-left:800px;
+		}
+	
 	</style>
 </head>
 <body>
@@ -147,12 +218,30 @@
 				<h3>국내 펜션 특가</h3>
 				<h5>지금 예약하세요!</h5>
 					<div class="put">
-						<span>목적지 또는 숙박 시설을 입력하세요.</span>
-						<span>체크인</span>
-						<span>체크 아웃</span><br>
-						<input type="text"  />
-						<input type="text"  />
-						<input type="text"  />
+						<div class="dest">
+							<p>목적지 또는 숙박 시설을 입력하세요</p>
+							<input type="text" class=dest1 />
+						</div>
+						<div class="ckin">
+							<p>체크인</p>
+							<input type="text" class=ckin1 /><br>
+							월요일
+						</div>
+						<div class="ckot">
+							<p>체크아웃</p>
+							<input type="text" class=ckot1 /><br>
+							화요일
+						</div>
+						<div>
+						
+							<p class="day">1<br>&emsp;박</p>
+							
+						</div>
+						<br>
+						<div class="room"><span>객실</span><select  class="room1" ><option >1</option><option >2</option></select></div>
+						<div class="adult"><span class="hu">성인<br></span><select  class="adult1" ><option >1</option><option >2</option></select><br>만 18세 이상</div>
+						<div class="child"><span class="hu">아동<br></span><select  class="child1" ><option >1</option><option >2</option></select><br>만 17세 이하</div>
+						<input type="submit"  value="검색"/>
 					</div>
 				</div>
 			</div>
@@ -167,16 +256,19 @@
 				</div>
 				<div class=nation>
 					<b class="name">서귀포</b>
-				</div><br><br>
+				</div>
 				<div class=nation>
-					<b class="name">강릉</b>
+					<b class="name">강 릉</b>
 				</div>
 			</div>
 			<br>
 			<div id="over">
 			<div class="over" >
-				<div class="nation1"> <input class="special"type="submit" value="특가 상품보기"/></div>
-				<div class="nation1"> <b class="name">제주시</b></div>
+		
+				<div class="nation1"> 
+					<b class="name1">제주시</b>
+					<span>특가 상품 모두 보기</span>			
+				</div>
 				<div class="resort"><a href="#"><img src="C:/Users/km/Desktop/쿠팡.png" class="img">
 					<br><b>반하크라 펜션</b>
 					<br>3.5성급
@@ -211,6 +303,9 @@
 					<br><input type="submit" value="가격보기" /> </a>
 					<div class="nation1"> <input class="special"type="submit" value="특가 상품보기"/></div>
 				</div>
+			</div>
+			<div>
+				<span class="under">특가 상품 모두 보기</span>
 			</div>
 			</div>
 			<hr>
