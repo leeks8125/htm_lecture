@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>findid</title>
+    <style>
+    	.findid{
+    		margin:0 auto;
+    		width:670px;
+    	}
+    	.find{
+    		
+    		border-bottom:1px solid gray;
+    	}
+    	.next{
+    		margin-left:300px;
+    	}
+    </style>
+  </head>
+  <body>
+	<!-- source start --> 
+	<form >
+		<div class="findid">
+			<div class="find"><b>아이디찾기</b></div>
+			<p>아이디 찾는 방법을 선택해 주세요</p>
+			<fieldset>
+				<input type="radio" id="phonenum" name="select"/>
+				<label for="phonenum">회원 정보에 등록한 휴대전화로 인증</label> <br>
+				<input type="radio" id="email" name="select"/>
+			    <label for="email">회원 정보에 등록한 휴대전화로 인증</label> 
+		    </fieldset>
+		    <br>
+		    <fieldset>
+			    <input type="radio" id="owns" name="select"/>
+			    <label for="owns">본인 명의 휴대폰 인증</label> <br>
+			    <input type="radio" id="ipin" name="select"/>
+			    <label for="ipin">아이핀 인증</label> 
+		    </fieldset>
+		    <br>
+		    <input type="button" value="다음" class="next" />
+	    </div>
+    </form>
+	<!-- source end -->
+    
+  </body>
+</html>

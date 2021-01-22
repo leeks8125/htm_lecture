@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Document</title>
+	    <style>
+	    	body{
+	    		width:670px;
+	    		margin:0 auto;
+	    	}
+	    	.newpw{
+	    		border-bottom:2px solid gray;
+	    		display:flex;
+	    		justify-content:space-between;
+	    	}
+	    	.squence{
+	    		display:flex;
+	    	}
+	    	.content{
+	    	
+	    		margin-left:200px;
+	    	}
+	    	.ck{
+	    		margin-left:300px;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div class="newpw">
+		<div class="pw">비밀번호 재설정</div>
+		
+		<div class="squence">
+			<div>01.아이디입력</div> >
+			<div>02.본인 확인</div> >
+			<div>03.비밀번호 재설정</div> 
+		</div>
+		</div>
+			<p>
+				<span>비밀번호를 변경해주세요</span><br>
+				<span>다른 아이디나 사이트에서 사용한적이 없는 비밀번호로 변경</span>
+			</p>
+			<form>
+				<fieldset>
+					<div class="content">
+					<p>네이버 아이디</p>
+					<input type="password" placeholder="새비밀번호" /><br>
+					<input type="password" placeholder="새비밀번호 확인" /><br>
+					
+					<span>아래 이미지를 보이는대로 입력</span><br>
+					<input type="text" placeholder="자동입력 방지문자" />
+					</div>
+				</fieldset>
+				<input type="button" value="다음" class="ck" />
+			</form>
+	</body>
+	</html>

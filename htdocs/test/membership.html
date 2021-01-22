@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Membership</title>
+	    <style>
+	    	body{
+	    		list-style:none;
+	    		text-decoration:none;	
+	    		background-color:blue;
+	    	}
+	    	.membership{
+	    		width:200px;margin:0 auto;
+	    	}
+	    	#phone{
+	    		width:90px;
+	    	}
+			#id{
+				width:100px;
+			}
+	    	.input1{
+	    		font-size:5px;
+	    		width:80px;
+	    	}
+	    	.input2{
+	    		width:127px;
+	    	}
+	    	.join1{
+	    		width:183px;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<form >
+			<!--회원가입 -->
+			<div class="membership">
+				<div class="name">
+				<label for="name">이름</label><br>
+				<input type="text" placeholder="이름을 입력해주세요" id="name"/>
+				</div>
+				<div class="bod">
+					<label >생년월일</label><br>
+					<select>
+						<option>1960</option>
+						<option>1970</option>
+						<option>1980</option>
+						<option>1990</option>
+						<option>2000</option>
+					</select>년
+					<select>
+						<option>1</option>
+						<option>4</option>
+						<option>7</option>
+						<option>10</option>
+						<option>12</option>
+					</select>월
+					<select>
+						<option>1</option>
+						<option>8</option>
+						<option>15</option>
+						<option>23</option>
+						<option>30</option>
+					</select>일
+					
+				</div>
+				<div class="gender">
+					<label >성별:</label>
+					<label for="gender1">남자</label>
+					<input type="radio" name="gender" id="gender1"/>
+					<label for="gender2">여자</label>
+					 <input type="radio" name="gender" id="gender2"/>
+				</div>
+				<div class="id">
+					<label for="id">ID</label><br>
+					<input type="text" placeholder="ID 입력" id="id"/>
+					<input type="submit" value="중복확인" />
+				</div>
+				<div class="pw">
+					<label for="pw">PW</label><br>
+					<input type="password" placeholder="PW를 입력해주세요" id="pw"/>
+				</div>
+				<div class="ckpw">
+					<label for="ckpw">PW확인</label><br>
+					<input type="password" placeholder="PW를 입력해주세요" id="ckpw"/>
+				</div>
+				<div class="email">
+					<label for="email">이메일</label><br>
+					<input type="text" value="@gmail.com" id="email"/>
+				</div>
+				<div class="phone">
+					<label for="phone">휴대폰</label><br>
+					<input type="text" id="phone" />
+					<input type="submit" value="인증번호 받기" class="input1"/>
+				</div>
+				<div class="ckphone">
+					<input type="text" placeholder="인증번호 입력" class="input2"/>
+					<input type="submit" value="확인" />
+				</div>
+				<br>
+				<div class="join">
+					<input type="submit" value="가입하기" class="join1"/>
+				</div>
+			</div>
+		</form>	
+	</body>
+	</html>

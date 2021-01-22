@@ -4,23 +4,133 @@
         <meta charset="UTF-8">
         <title></title>
         <style>
+        *{
+        	text-decoration:none;
+        	list-style:none;
+        }
           body{
+          		margin:0;
 				background-image:url('C:/Users/km/Desktop/background.png');
 				background-size:100%;
 			}
-			h1{text-align:center;}
+			.header{
+				
+				border-top: 1px solid gray;
+				border-bottom: 1px solid gray;
+				display:flex;
+				justify-content:center;
+				height:80px;
+				
+			}
+			li{
+				font-size:30px;
+				margin:20px 80px 20px 0;
+				color:white;	
+			}
+			.title{
+				text-align:center;
+				font-size:30px;
+				
+			}
+			.about{
+				display:flex;
+				
+			}
+			.about1{
+				background-color:black;
+				width:60%;
+				height:300px;
+				color:white;
+			}
+			.about2{
+				background-color:gray;
+				width:40%;
+				height:300px;
+			}
+			.work{
+				display:flex;
+				margin-top:-15px;
+			}
+			.work1{
+				background-color:gray;
+				width:60%;
+				height:300px;
+				color:white;
+			}
+			.work2{
+				background-color:black;
+				width:40%;
+				height:300px;
+			}
+			.contact{
+				display:flex;
+				margin-top:-15px;
+			}
+			.contact1{
+				background-color:black;
+				width:60%;
+				height:300px;
+				color:white;
+			}
+			.contact2{
+				background-color:gray;
+				width:40%;
+				height:300px;
+			}
+			.help{
+				display:flex;
+				margin-top:-15px;
+			}
+			.help1{
+				background-color:gray;
+				width:60%;
+				height:300px;
+				color:white;
+			}
+			.help2{
+				background-color:black;
+				width:40%;
+				height:300px;
+			}
+			
             
         </style>
     </head>
     <body>
-	
-       <h1>이교석의 포트폴리오</h1>
-        <hr>
+  		 <div class="title">Title</div>
+		<div>
+			<ul class="header">
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">WORK</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">HELP</a></li>
+			</ul>
+		</div>
+		
+		
+		<div class="about">
+			<div class="about1">ABOUT</div>
+			<div class="about2"></div>
+			
+		</div>
+		
+		<div class="work">
+			<div class="work1">WORK</div>
+			<div class="work2"></div>
+			
+		</div>
+		
+		<div class="contact">
+			<div class="contact1">CONTACT</div>
+			<div class="contact2"></div>
+			
+		</div>
+		
+		<div class="help">
+			<div class="help1">HELP</div>
+			<div class="help2"></div>
+			
+		</div>
 
-        <h2>목록</h2>
-        <h2>소개</h2>
-        <h2>경험</h2>
-
-       
     </body>
 </html>
